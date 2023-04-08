@@ -64,7 +64,7 @@ In plain words
 #### Structure
 ![](/uml/composite-uml.jpg)
 
-A typical composite object structure:
+__A typical composite object structure:__<br>
 ![](/uml/composite-typical.jpg)
 
 > __Participants__ <br> - Component <br> - Leaf <br> - Composite <br> - Client
