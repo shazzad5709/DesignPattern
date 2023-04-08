@@ -19,6 +19,9 @@ In plain words
 ### Factory Method
 > Defines an interface for creating objects, but allows subclasses to decide which class to instantiate.
 
+#### Structure
+![][/uml/factory-method.jpg]
+
 > __Participants__ <br> - Product <br> - ConcreteProduct <br> - Creator <br> - ConcreteCreator
 
 ### Abstract Factory
