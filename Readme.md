@@ -27,15 +27,24 @@ In plain words
 ### Abstract Factory
 > A factory of factories; a factory that groups the invidual but related/dependant factories together without specifiying their concrete classes.
 
+#### Structure
+![](/uml/abstract-factory.jpg)
+
 > __Participants__ <br> - AbstractFactory <br> - ConcreteFactory <br> - AbstractProduct <br> - ConcreteProduct <br> - Client
 
 ### Builder
 > Separates the construction of a complex object from its representation, allowing the same construction process to create different representation.
 
+#### Structure
+![](/uml/builder.jpg)
+
 > __Participants__ <br> - Builder <br> - ConcreteBuilder <br> - Director <br> - Product
 
 ### Singleton
 > Ensures that only one instance of a class is created, and provides a global point of access to that instance.
+
+#### Structure
+![](/uml/singleton.jpg)
 
 > __Participants__ <br> - Singleton
 
@@ -52,15 +61,27 @@ In plain words
 ### Composite
 > Composite pattern composes objects into a tree-like structure to represent part-whole hierarhcies. It lets clients treat individual objects and compositions of objects uniformly.
 
+#### Structure
+![](/uml/composite-uml.jpg)
+
+A typical composite object structure:
+![](/uml/composite-typical.jpg)
+
 > __Participants__ <br> - Component <br> - Leaf <br> - Composite <br> - Client
 
 ### Decorator
 > Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class, without affecting the behavior of other objects in the same class.
 
+#### Structure
+![](/uml/decorator.jpg)
+
 > __Participants__ <br> - Component <br> - ConcreteComponent <br> - Decorator <br> - ConcreteDecorator
 
 ### Facade
 > Provides a simplified interface to a complex subsystem, making it easier to use and understand.
+
+#### Structure
+![](/uml/facade.jpg)
 
 > __Participants__ <br> - Facade <br> - subsystem classes
 
@@ -82,24 +103,39 @@ In plain words
 ### Observer
 > Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
+#### Structure
+![](/uml/observer.jpg)
+
 > __Participants__ <br> - Subject <br> - Observer <br> - ConcreteSubject <br> - ConcreteObserver
 
 ### Mediator
 > Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other. Because now they don't need to have the knowledge of each other's implementation.
+
+#### Structure
+![](/uml/mediator.jpg)
 
 > __Participants__ <br> - Mediator <br> - ConcreteMediator <br> - Colleague classes
 
 ### Template Method
 > Defines the skeleton of an algorithm in a base class and allows subclasses to override specific steps of the algorithm without changing its structure.
 
+#### Structure
+![](/uml/template-method.jpg)
+
 > __Participants__ <br> - AbstractClass <br> - ConcreteClass
 
 ### Strategy
 > Strategy pattern allows you to switch the algorithm or strategy based upon the situation.
 
+#### Structure
+![](/uml/strategy.jpg)
+
 > __Participants__ <br> - Strategy <br> - ConcreteStrategy <br> - Context
 
 ### Chain of Responsibility
 > It helps building a chain of objects. Request enters from one end and keeps going from object till it finds the suitable handler.
+
+#### Structure
+![](/uml/chain-of-responsibility.jpg)
 
 > __Participants__ <br> - Handler <br> - ConcreteHandler <br> - Client
