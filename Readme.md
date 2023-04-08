@@ -20,7 +20,7 @@ In plain words
 > Defines an interface for creating objects, but allows subclasses to decide which class to instantiate.
 
 #### Structure
-![][/uml/factory-method.jpg]
+![][https://github.com/shazzad5709/DesignPattern/blob/master/uml/factory-method.jpg]
 
 > __Participants__ <br> - Product <br> - ConcreteProduct <br> - Creator <br> - ConcreteCreator
 
