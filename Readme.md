@@ -13,32 +13,26 @@ In plain words
 * [Builder](#builder)
 * [Singleton](#singleton)
 * [Prototype](#)
----
 ### Simple Factory
 > Generates an instance for client without exposing any instantitation logic to the client.
 
 ### Factory Method
 > Defines an interface for creating objects, but allows subclasses to decide which class to instantiate.
 
+> __Participants__ <br> - 
+
 ### Abstract Factory
 > A factory of factories; a factory that groups the invidual but related/dependant factories together without specifiying their concrete classes.
 
-#### Participants
-- __AbstractFactory__
-: declares an interface for operations that create abstract product objects.
-- __ConcreteFactory__
-: implements the operations to create concrete product objects.
-- __AbstractProduct__
-: declares an interface for a type of product object.
-- __ConcreteProduct__
-
+> __Participants__ <br> - AbstractFactory <br> - ConcreteFactory <br> - AbstractProduct <br> - ConcreteProduct <br> - Client
 
 ### Builder
 > Separates the construction of a complex object from its representation, allowing the same construction process to create different representation.
 
+> __Participants__ <br> - Builder <br> - ConcreteBuilder <br> - Director <br> - Product
+
 ### Singleton
 > Ensures that only one instance of a class is created, and provides a global point of access to that instance.
----
 
 ## Structural
 > Structurak design patterns are concerned with object composition and class relationships. They help to create complex structures and provide a way to simplify the structure by identifying the relaionships between the objects.
@@ -50,7 +44,6 @@ In plain words
 * [Bridge](#)
 * [Flyweight](#)
 * [Proxy](#)
----
 ### Composite
 > Composite pattern composes objects into a tree-like structure to represent part-whole hierarhcies. It lets clients treat individual objects and compositions of objects uniformly.
 
@@ -76,7 +69,6 @@ In plain words
 * [Iterator](#)
 * [Visitor](#)
 
----
 ### Observer
 > Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
