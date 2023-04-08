@@ -19,7 +19,7 @@ In plain words
 ### Factory Method
 > Defines an interface for creating objects, but allows subclasses to decide which class to instantiate.
 
-> __Participants__ <br> - 
+> __Participants__ <br> - Product <br> - ConcreteProduct <br> - Creator <br> - ConcreteCreator
 
 ### Abstract Factory
 > A factory of factories; a factory that groups the invidual but related/dependant factories together without specifiying their concrete classes.
@@ -34,6 +34,8 @@ In plain words
 ### Singleton
 > Ensures that only one instance of a class is created, and provides a global point of access to that instance.
 
+> __Participants__ <br> - Singleton
+
 ## Structural
 > Structurak design patterns are concerned with object composition and class relationships. They help to create complex structures and provide a way to simplify the structure by identifying the relaionships between the objects.
 
@@ -47,13 +49,18 @@ In plain words
 ### Composite
 > Composite pattern composes objects into a tree-like structure to represent part-whole hierarhcies. It lets clients treat individual objects and compositions of objects uniformly.
 
+> __Participants__ <br> - Component <br> - Leaf <br> - Composite <br> - Client
+
 ### Decorator
 > Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class, without affecting the behavior of other objects in the same class.
+
+> __Participants__ <br> - Component <br> - ConcreteComponent <br> - Decorator <br> - ConcreteDecorator
 
 ### Facade
 > Provides a simplified interface to a complex subsystem, making it easier to use and understand.
 
----
+> __Participants__ <br> - Facade <br> - subsystem classes
+
 ## Behavioral
 > Behavioral design patterns are concerned with the interaction and communication between objects. They help to define common communication patterns between objects, which simplify communication and improve flexibility.
 
@@ -72,14 +79,24 @@ In plain words
 ### Observer
 > Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
+> __Participants__ <br> - Subject <br> - Observer <br> - ConcreteSubject <br> - ConcreteObserver
+
 ### Mediator
 > Mediator pattern adds a third party object (called mediator) to control the interaction between two objects (called colleagues). It helps reduce the coupling between the classes communicating with each other. Because now they don't need to have the knowledge of each other's implementation.
+
+> __Participants__ <br> - Mediator <br> - ConcreteMediator <br> - Colleague classes
 
 ### Template Method
 > Defines the skeleton of an algorithm in a base class and allows subclasses to override specific steps of the algorithm without changing its structure.
 
+> __Participants__ <br> - AbstractClass <br> - ConcreteClass
+
 ### Strategy
 > Strategy pattern allows you to switch the algorithm or strategy based upon the situation.
 
+> __Participants__ <br> - Strategy <br> - ConcreteStrategy <br> - Context
+
 ### Chain of Responsibility
 > It helps building a chain of objects. Request enters from one end and keeps going from object till it finds the suitable handler.
+
+> __Participants__ <br> - Handler <br> - ConcreteHandler <br> - Client
